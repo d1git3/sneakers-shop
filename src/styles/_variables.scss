@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+
+  --color-gray-dark: #5C5C5C;
+  --color-gray: #9D9D9D;
+  --color-gray-light: #D3D3D3;
+  --color-gray-border: #F2F2F2;
+
+
+  --color-green: hsl(87, 59%, 59%);
+  --color-green-hover: hsl(87, 59%, 66%);
+
+  --color-blue-light: #E7F6FF;
+  --color-red: #FF8585;
+  --color-pink: #FEF0F0;
+
+  --border: #{rem(1)} solid var(--color-gray-border);
+
+  --font-family: 'Inter', sans-serif;
+
+  --transition-duration: .2s;
+
+  // @include laptop {
+  //   --container-width: #{rem(1280)};
+  // }
+}

@@ -1,0 +1,32 @@
+@use 'helpers' as *;
+
+.container {
+  padding-inline: fluid(60, 16);
+}
+
+@for $i from 1 through 3 {
+  .cols-#{$i} {
+    grid-template-columns: repeat(#{$i}, auto) !important;
+    justify-content: start !important;
+
+    @include mobile {
+      grid-template-columns: repeat(2, auto) !important;
+    }
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
